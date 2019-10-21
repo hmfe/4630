@@ -1,0 +1,76 @@
+input[name="search-input"] {
+    width: 350px;
+    padding: 15px 35px;
+    border: 2px solid #ddd;
+    margin-top: 15px;
+}
+  
+datalist {
+    width: 350px;
+    background: #fff;
+    border: 2px solid #ddd;
+    padding: 10px 35px;
+    margin-top: 10px;
+    display: block;
+    min-height: 180px;
+    overflow-y: scroll;
+
+    option {
+        margin: 5px 0;
+        cursor: pointer
+    }
+}
+
+.saved-container {
+    header {
+        margin-top: 15px;
+
+        h1 {
+            display: inline;
+        }
+        span {
+            float: right;
+            cursor: pointer;
+        }
+    }
+}
+
+.saved-list {
+    padding-left: 0;
+
+    li {
+        font-weight: bold;
+        list-style-type: none;
+        color: #888;
+    }   
+
+
+    time {
+        display: block;
+        font-size: 10px
+    }
+
+    .delete-item {
+        cursor: pointer;
+        font-size: 12px;
+        float: right;
+        &:hover {
+            animation: rotate 200ms ease-in-out;
+        }
+    }
+}
+
+hr {
+    margin: 5px 0;
+    border-top: 1px solid #c5c5c5;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
