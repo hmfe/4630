@@ -1,8 +1,6 @@
 body {
   background: #eee;
   font-family: 'helvetica';
-  display: flex;
-  justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -10,4 +8,5 @@ body {
 main {
   display: flex;
   justify-content: center;
+  width: 100vw
 }

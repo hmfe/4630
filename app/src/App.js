@@ -12,7 +12,7 @@ function App() {
       <>
         <Nav />
         <main>
-          <section>
+          <section className="search-section">
             <Route exact path="/">
                 <Search />
             </Route>

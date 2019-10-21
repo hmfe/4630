@@ -1,12 +1,13 @@
 input[name="search-input"] {
-    width: 350px;
+    width: 100%;
     padding: 15px 35px;
     border: 2px solid #ddd;
     margin-top: 15px;
+    box-sizing: border-box;
 }
   
 datalist {
-    width: 350px;
+    width: 100%;
     background: #fff;
     border: 2px solid #ddd;
     padding: 10px 35px;
@@ -14,6 +15,7 @@ datalist {
     display: block;
     height: 120px;
     overflow-y: scroll;
+    box-sizing: border-box;
 
     option {
         margin: 5px 0;
@@ -73,4 +75,9 @@ hr {
     100% {
         transform: rotate(90deg);
     }
+}
+
+.search-section {
+    width: 100%;
+    padding: 0 10px;
 }
