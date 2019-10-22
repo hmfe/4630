@@ -1,3 +1,62 @@
+@media (max-width: 375px) {
+    .search-section {
+        width: 275px;
+        padding: 0 10px;
+    }
+
+    datalist {
+        padding: 10px 25px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 667px)  { 
+    .search-section {
+        width: 375px;
+        padding: 0 10px;
+    }
+
+    datalist {
+        padding: 10px 15px;
+    }
+
+    .saved-container {
+        header {
+            margin-top: 15px;
+    
+            h1 {
+                display: inline;
+            }
+            span {
+                float: right;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (min-width: 667px) { 
+    .search-section {
+        width: 600px;
+        padding: 0 10px;
+    }
+    datalist {
+        padding: 10px 35px;
+    }
+
+    .saved-container {
+        header {
+            h1 {
+                display: block;
+                margin-bottom: 5px
+            }
+            span {
+                float: none;
+            }
+        }
+    }
+}
+
+
 input[name="search-input"] {
     width: 100%;
     padding: 15px 35px;
@@ -10,7 +69,6 @@ datalist {
     width: 100%;
     background: #fff;
     border: 2px solid #ddd;
-    padding: 10px 35px;
     margin-top: 10px;
     display: block;
     height: 120px;
@@ -27,15 +85,13 @@ datalist {
     header {
         margin-top: 15px;
 
-        h1 {
-            display: inline;
-        }
         span {
-            float: right;
             cursor: pointer;
         }
     }
 }
+
+
 
 .saved-list {
     padding-left: 0;
@@ -75,9 +131,4 @@ hr {
     100% {
         transform: rotate(90deg);
     }
-}
-
-.search-section {
-    width: 100%;
-    padding: 0 10px;
 }

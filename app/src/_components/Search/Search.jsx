@@ -39,7 +39,10 @@ const Search = () => {
   
     return (
         <>
-            <input type="text" name="search-input" placeholder="Search here" onChange={(e)=> {handleChange(e.currentTarget.value); }} />
+            <form action="#">
+                <label for="search-input" style={{display: 'none'}}>Search</label>
+                <input type="text" name="search-input" placeholder="Search here" onChange={(e)=> {handleChange(e.currentTarget.value); }} />
+            </form>
             <datalist style={{display: dataListIsVisible ? 'block' : 'none'}}>
                 { list ? 
                   list.map((item, i) => (
